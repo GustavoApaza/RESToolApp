@@ -3,13 +3,13 @@
 // Realizar un PUT editando uno de los characters creados. 
 // Validar la edición realizada en el front
 // =======================================================================================================================
-describe('Ej 2 Crear personaje y verificar su existencia en el fornt', () => {
+describe('Ej 3 Modificar personaje y verificar su edicion en el forntend', () => {
     it('Create a new character', () => {
         let newIsAlive = true;
-        let newLocation = "Winterfell"
-        let newName = "Gust"
-        let newRealName = "Gustavo Apaza"
-        let thumbnail = "Aca va una imagen"
+        let newLocation = "Winterfell";
+        let newName = "Gust";
+        let newRealName = "Gustavo Apaza";
+        let thumbnail = "Aca va una imagen";
         cy.request({
             method: 'POST',
             url: 'https://restool-sample-app.herokuapp.com/api/character',

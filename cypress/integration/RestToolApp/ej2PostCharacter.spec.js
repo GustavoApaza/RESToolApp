@@ -7,10 +7,10 @@ describe('Ej 2 Crear personaje y verificar su existencia en el fornt', () => {
     it('Create a new character', () => {
         const uniqueSeed = Date.now().toString();
         let newIsAlive = true;
-        let newLocation = "Winterfell"
-        let newName = "Gust"
-        let newRealName = "Gustavo Apaza"
-        let thumbnail = "Aca va una imagen"
+        let newLocation = "Winterfell";
+        let newName = "Gust";
+        let newRealName = "Gustavo Apaza";
+        let thumbnail = "Aca va una imagen";
         cy.request({
             method: 'POST',
             url: 'https://restool-sample-app.herokuapp.com/api/character',
